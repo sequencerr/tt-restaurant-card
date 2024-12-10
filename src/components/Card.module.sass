@@ -1,0 +1,106 @@
+
+.card
+    font-family: "Nunito Sans", sans-serif
+
+    width: 306px
+    height: 373px
+    display: flex
+    flex-direction: column
+    border-radius: 8px
+    box-shadow: 20px 30px 80px 0px #e6e6e6
+    position: relative
+
+    &::after
+        position: absolute
+        top: 0
+        right: 0
+        height: 40px
+        width: 40px
+        margin: 12px 12px 0 0
+        border-radius: 100vw
+        content: ''
+        background: url('../../public/assets/Bookmark.svg') no-repeat center #00000066
+
+    img
+        border-radius: 8px 8px 0px 0px
+
+    .card_image_wrapper
+        position: relative
+        .card_time
+            position: absolute
+            padding: 4px 12px
+            bottom: 4px
+            right: 0
+            display: flex
+            font-display: row
+            gap: 8px
+            border-top-left-radius:12px
+            background: #fff
+            .card_time_text
+                padding-top: 2px
+
+                color: #2F3441
+                font-weight: 400
+                font-size: 16px
+                line-height: 145%
+
+
+    .card_main
+        position: relative
+        // &::before
+        //     position: absolute
+        //     top: 0
+        //     right: 0
+        //     margin: 12px 12px 0 0
+        //     border-radius: 100vw
+        //     content: ''
+        //     background: #fff
+        height: 100%
+        display: flex
+        flex-direction: column
+        // gap: 24px
+        justify-content: space-between
+        padding: 16px 16px 20px 16px
+
+        .card_info_wrapper
+            display: flex
+            flex-direction: column
+            gap: 8px
+
+            .card_title
+                color: #0D1820
+                font-weight: 500
+                font-size: 20px
+                line-height: 140%
+                font-family: 'Gilroy'
+            .card_details
+                display: flex
+                justify-content: space-between
+                .card_price
+                    color: #2F3441
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 26px
+
+                .card_mass
+                    color: #ACACAC
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 160%
+
+        .card_button
+            font-weight: 500
+            font-size: 18px
+            line-height: 130%
+
+            border-radius: 100vw
+            width: 100%
+            padding: 12px 0
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 10px
+
+            color: #2F3441
+            background: #FAFAFA
+            border: 1.5px solid #EFEFEF
